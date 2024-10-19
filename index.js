@@ -15,7 +15,7 @@ const makeCommit = n => {
     if(n===0) return simpleGit().push();
 
     const DATE = moment ()
-    .subtract(getRandomInt(0, 998), "days")
+    .subtract(getRandomInt(0, 365), "days")
     .format();
 
     const date = {
@@ -30,4 +30,4 @@ const makeCommit = n => {
     })
 }
 
-makeCommit(2000);
+makeCommit(1000);
